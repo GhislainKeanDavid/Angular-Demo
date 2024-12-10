@@ -1,0 +1,15 @@
+<h1 class="red">fas</h1>
+<p>{{ title }}</p>
+<button (click)="executeHelloWorld()">
+    Hello World!
+</button>
+
+<div class="d-flex flex-column gap-2">
+    <span class="fs-bold">Account: {{ account$ | async }}</span>
+    <input type="text" (input)="modifyAccount($event)">
+</div>
+
+<div class="border border-primary">
+    <router-outlet></router-outlet>
+</div>
+
